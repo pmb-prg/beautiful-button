@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dod {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.833), inset 0 2px 2px rgba(255, 255, 255, 0.214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.key span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #ffffff;
+    transition: all 0.4s;
+}
+
+.mode {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.rgb {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    margin-left: 2px;
+    border: 3px solid rgb(38, 38, 38);
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 50%;
+    display: block;
+}
+
+@keyframes change {
+    0% {
+        background-color: #ff002b;
+    }
+    25% {
+        background-color: #6600ff;
+    }
+    50% {
+        background-color: #0066ff;
+    }
+    75% {
+        background-color: #00ff11;
+    }
+    100% {
+        background-color: #ff002b;
+    }
+}
+
+.screen {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.screen img {
+    width: 400px;
+    border-radius: 10px;
+    filter: brightness(0);
+    border: 6px solid black;
+    transition: all 0.5s ease-in-out;
+}
